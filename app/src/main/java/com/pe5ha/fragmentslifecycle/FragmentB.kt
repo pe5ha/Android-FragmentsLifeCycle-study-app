@@ -83,6 +83,11 @@ class FragmentB : Fragment() {
         myLog("onSaveInstanceState")
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        myLog("onDestroyView")
+    }
+
     override fun onDestroy() {
         super.onDestroy()
         myLog("onDestroy")
